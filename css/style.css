@@ -64,3 +64,11 @@ body {
   width: 100%; /* Pełna szerokość stopki */
 
 }
+
+/* css/style.css */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
