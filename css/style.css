@@ -71,4 +71,29 @@ body {
   height: auto;
 }
 
+/* Add this CSS to your existing styles */
+.cookie-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-popup button {
+  background-color: #bbb;
+  border: none;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cookie-popup button:hover {
+  background-color: #999;
+}
 
