@@ -97,3 +97,36 @@ body {
   background-color: #999;
 }
 
+.code-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+pre {
+  background-color: #000000; /* Czarne tło */
+  color: #00ff00; /* Zielona czcionka */
+  border: 1px solid #555; /* Obwódka w odcieniu szarości */
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Courier New", Courier, monospace; /* Czcionka komputerowa */
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 300px; /* Ograniczenie wysokości */
+  overflow-y: auto; /* Przewijanie pionowe */
+  overflow-x: auto; /* Przewijanie poziome */
+}
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.copy-button:hover {
+  background-color: #0056b3;
+}
+

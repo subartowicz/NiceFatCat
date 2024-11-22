@@ -20,12 +20,30 @@
     <a href="../base/c_main_site.html">_c_language</a>
     <a href="../base/cpp_main_site.html">_cpp_language</a>
     <a href="../base/about_me.html">_about_me</a>
-    <a href="../base/links">_links</a>
+    <a href="../base/links.html">_links</a>
   </div>
 </div>
 <div class="content">
   <h1>cpp langue</h1>
-  <p>This is the main content area.</p>
+
+
+
+
+  <!-- Kod w C++ -->
+  <div class="code-container">
+    <button class="copy-button" onclick="copyCode('code-cpp')">Copy</button>
+    <pre id="code-cpp">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, LLPL" &lt;&lt; endl;
+    return 0;
+}
+    </pre>
+  </div>
+
+  <script src="../js/copyCode.js"></script>
 
   <footer class="footer">
     <p>Licensed under GNU. Copyright © 2024 Krzysztof Subartowicz (Cisco).</p>
