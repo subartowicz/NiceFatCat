@@ -13,7 +13,6 @@
     <h1><a href="../index.html">LLPL</a> </h1>
     <p>homepage of <br> K. Subartowicz</p><br>
     e-mail: k(at)llpl.org
-    <!-- Możesz dodać tutaj dodatkowe elementy, które mają być na górze paska bocznego -->
   </div>
   <div class="bottom-section">
     <h2></h2>
@@ -35,26 +34,79 @@
   <h2>prologue - first post</h2>
   The goal I have set for myself is to learn programming in low-level languages. <br>
   For some time, I have been learning
-  languages like Python and Java, but I have realized that the most intriguing and exciting are the low-level languages.<br>
-  On this blog, I want to share my experiences, ups and downs (which will undoubtedly be plenty).
+  languages like Python and Java, but I have realized that the most intriguing
+  and exciting are the low-level languages.<br>
+  On this blog, I want to share my experiences, ups and downs (which will
+  undoubtedly be plenty).
   While browsing forums and Reddit, I encountered various strategies.
 
-  <h3>strategy one</h3> Start with C++, you will learn C along the way, then check the differences between C and C++.
+  <h3>strategy one</h3> Start with C++, you will learn C along the way, then
+  check the differences between C and C++.
 
   <h3>strategy two, my choice </h3>Learn C first, then C++, and finally Assembler.
-  <h3>strategy three, my choice</h3> First, learn Python well, then move on to other languages.<br><br>
+  <h3>strategy three, my choice</h3> First, learn Python well, then move on
+  to other languages.<br><br>
 
   <b>Why this choice? </b><br> <br>
 
-  Of course, learning programming <b>would be useless </b>if I didn't simultaneously start reading about how computers and
-  operating systems work. I intend to do this while also refreshing my knowledge of mathematics and physics from my
+  Of course, learning programming <b>would be useless </b>if I didn't
+  simultaneously start reading about how computers and
+  operating systems work. I intend to do this while also refreshing my
+  knowledge of mathematics and physics from my
   university years.<br><br>
 
 
   11.19.2024, 10PM<br><br>
   -------------------------------------------------------<br>
   -------------------------------------------------------<br>
-
+28.11.2024, 1PM
+  <h2>first week</h2>
+  What I've done: I recalled the basics of Python and writing in this language.
+  I reviewed the principles of object-oriented programming. Additionally,
+  <b>I prepared the application</b> insurance.llpl.org.pl, which aims to calculate
+  the home insurance price based on property variables. <br>
+  Developed using
+  <b>object-oriented programming and the Flask framework and PostgreSQL</b>. <br>
+  The application is
+  available on my GitHub <a href="https://github.com/gitlearncpp/insurance.llpl">link</a> . <br></br>Additionally, the application <b>has been deployed </b>to
+  a production environment. <b>Fedora server</b>, using <b>Nginx and Gunicorn</b>.<br>
+  I struggled a bit with the configuration during deployment, but it worked out.
+  I did not create the application's frontend; it is available via an API.<br><br>
+  <h2>example:</h2>
+  <b>Endpoint</b>: http://57.129.16.48/calculate_price <br>
+  <b>request</b>: <br>{
+  "house": {
+  "price": 536000,
+  "bedrooms": 1,
+  "bathrooms": 2,
+  "square_feet": 30,
+  "lot_size": 2000,
+  "year_built": 1891,
+  "city": "Warszawa",
+  "state": "Mazowieckie",
+  "address": "Ul. niepodleglosci",
+  "number": "2",
+  "things_inside": 30000,
+  "house_type": "apartment"
+  },
+  "person": {
+  "first_name": "jan",
+  "last_name": "nowak",
+  "pesel": "75351115553",
+  "street": "Ul. poboczna",
+  "city": "Gdynia",
+  "number": "16",
+  "postal_code": "81-578",
+  "phone": "555666777",
+  "vip": false
+  }
+  }<br>
+<b>response:</b><br>
+  {
+  "house_details": "Apartment,Mazowieckie, Ul. Niepodleglosci, 2, Warszawa",
+  "person_name": "Jan Nowak",
+  "price": 540
+  } <br><br><br>
 
   <footer class="footer">
     <p>Licensed under GNU. Copyright © 2024 Krzysztof Subartowicz (Cisco).</p>
