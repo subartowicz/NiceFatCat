@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <div class="sidebar">
   <div class="top-section">
     <h1><a href="../index.html">LLPL</a> </h1>
-    <p>homepage of <br> K. Subartowicz</p><br>
+    <p>homepage of <br> Cisco</p><br>
     e-mail: k(at)llpl.org
   </div>
   <div class="bottom-section">
@@ -26,53 +26,51 @@
   </div>
 </div>
 <div class="content">
+
   <h1>personal blog - my journey with Low-Level Languages</h1>
+<br><br>
 
+  <h2>17.12.2024, godz. 14:30</h2>
+  Niestety pochorowałem się, byłem wycięty z życia przez 3 tygodnie.<br>
+  Zero możliwości zbytniego wysiłku intelektualnego. Serdecznie nie polecam...<br><br>
+  Nie próżnowałem jednak tak bardzo, przeczytałem w tym czasie:<br><br>
+  _"Król darknetu" N. Biltona - bardzo dobra i wciągająca książka.
+  Polecam każdemu zainteresowanemu krypto, libertarianizmem i wolnością internetu.<br>
+  _No i perełka: "Czarne dziury. klucz do zrozumienia wszechświata". Pozycja obowiązkowa!!!<br>
+  _Obecnie czytam opasły tom: "Oppenheimer. Triumf i tragedia ojca bomby atomowej".
+  Zostało mi ok. 150 stron z 700. Bardzo interesująca lektura dla zainteresowanych nauką
+  i biografią tego niezwykłego człowieka.<br>
+
+  _Plus: obejrzałem 3 filmy Deadpoola. Dobra rozrywka na luźne wieczory. Nie wymaga zaangażowania
+  i dobrze się można przy tym rozerwać.<br><br>
+  Liczę, że ten tydzień przyniesie mi bardziej obfite rezultaty pracy.<br><br>
   -------------------------------------------------------<br>
   -------------------------------------------------------<br>
 
-  <h2>prologue - first post</h2>
-  The goal I have set for myself is to learn programming in low-level languages. <br>
-  For some time, I have been learning
-  languages like Python and Java, but I have realized that the most intriguing
-  and exciting are the low-level languages.<br>
-  On this blog, I want to share my experiences, ups and downs (which will
-  undoubtedly be plenty).
-  While browsing forums and Reddit, I encountered various strategies.
 
-  <h3>strategy one</h3> Start with C++, you will learn C along the way, then
-  check the differences between C and C++.
+  <h2>06.12.2024, godz. 22:00</h2>
 
-  <h3>strategy two, my choice </h3>Learn C first, then C++, and finally Assembler.
-  <h3>strategy three, my choice</h3> First, learn Python well, then move on
-  to other languages.<br><br>
-
-  <b>Why this choice? </b><br> <br>
-
-  Of course, learning programming <b>would be useless </b>if I didn't
-  simultaneously start reading about how computers and
-  operating systems work. I intend to do this while also refreshing my
-  knowledge of mathematics and physics from my
-  university years.<br><br>
+  Poprawiłem poniższy kod oraz przygotowałem zmiany na FE. Stworzyłem za pomocą Pythona oraz Flaska i JS
+  połączenie pomiędzy FE i BE. Teraz można wdrożyć projekt na serwerze. ten etap pomijam.
+  Jeżeli ktoś jest zainteresowany - w co mogę wątpić, może pobrać obecną wesję 0.1 z GH.<br>
+  Teraz można:<br>
+  przekazać dane poprzez FE, nie tylko Postmana; <br>
+  otrzymać cenę ubezpieczenia w dwóch wariantach;
+  ewentualnie dodawać kolejne zależności.<br>
+  To krótki projekt tytułem wstępu. <br><br>
 
 
-  11.19.2024, 10PM<br><br>
   -------------------------------------------------------<br>
   -------------------------------------------------------<br>
-28.11.2024, 1PM
-  <h2>first week</h2>
-  What I've done: I recalled the basics of Python and writing in this language.
-  I reviewed the principles of object-oriented programming. Additionally,
-  <b>I prepared the application</b> insurance.llpl.org.pl, which aims to calculate
-  the home insurance price based on property variables. <br>
-  Developed using
-  <b>object-oriented programming and the Flask framework and PostgreSQL</b>. <br>
-  The application is
-  available on my GitHub <a href="https://github.com/gitlearncpp/insurance.llpl">link</a> . <br></br>Additionally, the application <b>has been deployed </b>to
-  a production environment. <b>Fedora server</b>, using <b>Nginx and Gunicorn</b>.<br>
-  I struggled a bit with the configuration during deployment, but it worked out.
-  I did not create the application's frontend; it is available via an API.<br><br>
-  <h2>example:</h2>
+  <h2>28.11.2024, godz. 13:00</h2>
+  Co zrobiłem: Przypomniałem sobie podstawy Pythona i pisania w tym języku.
+  Przejrzałem zasady programowania obiektowego. Dodatkowo, <b>przygotowałem aplikację</b> insurance.llpl.org.pl, która ma na celu obliczanie ceny ubezpieczenia domu na podstawie zmiennych związanych z nieruchomością.<br>
+  Aplikacja została opracowana przy użyciu <b>programowania obiektowego, frameworka Flask i PostgreSQL</b>. <br>
+  Aplikacja jest dostępna na moim GitHubie: <a href="https://github.com/gitlearncpp/insurance.llpl">link</a> .<br>Dodatkowo, aplikacja <b>została wdrożona</b> do środowiska produkcyjnego. Serwer <b>Fedora</b>, przy użyciu <b>Nginx i Gunicorn</b>.<br>
+  Miałem trochę problemów z konfiguracją podczas wdrażania, ale udało się to rozwiązać.
+  Nie stworzyłem frontendu aplikacji; jest ona dostępna przez API.<br><br>
+
+  <b>przykład:</b><br><br>
   <b>Endpoint</b>: http://57.129.16.48/calculate_price <br>
   <b>request</b>: <br>{
   "house": {
@@ -84,32 +82,46 @@
   "year_built": 1891,
   "city": "Warszawa",
   "state": "Mazowieckie",
-  "address": "Ul. niepodleglosci",
+  "address": "Ul. Niepodległości",
   "number": "2",
   "things_inside": 30000,
   "house_type": "apartment"
   },
   "person": {
-  "first_name": "jan",
-  "last_name": "nowak",
+  "first_name": "Jan",
+  "last_name": "Nowak",
   "pesel": "75351115553",
-  "street": "Ul. poboczna",
+  "street": "Ul. Poboczna",
   "city": "Gdynia",
   "number": "16",
   "postal_code": "81-578",
-  "phone": "555666777",
-  "vip": false
-  }
-  }<br>
-<b>response:</b><br>
-  {
-  "house_details": "Apartment,Mazowieckie, Ul. Niepodleglosci, 2, Warszawa",
-  "person_name": "Jan Nowak",
-  "price": 540
-  } <br><br><br>
+  "phone": "555666<br><br>
+
+  -------------------------------------------------------<br>
+  -------------------------------------------------------<br>
+
+  <h2>19.11.2024, godz. 22:00</h2>
+
+  <b>prolog - pierwszy post</b><br>
+  Celem, który sobie wyznaczyłem, jest nauka programowania w językach niskiego poziomu. <br>
+  Od pewnego czasu uczę się języków takich jak Python i Java, ale zrozumiałem, że najbardziej intrygujące
+  i ekscytujące są języki niskiego poziomu.<br>
+  Na tym blogu chcę dzielić się swoimi doświadczeniami, wzlotami i upadkami (których niewątpliwie będzie wiele).
+  Przeglądając fora i Reddit, natknąłem się na różne strategie.
+
+  <h3>strategia pierwsza</h3> Zacząć od C++, po drodze nauczyć się C, a następnie sprawdzać różnice między C i C++.
+
+  <h3>strategia druga, mój wybór</h3> Najpierw nauczyć się C, potem C++, a na końcu Assemblera.
+  <h3>strategia trzecia</h3> Najpierw dobrze opanować Pythona, a potem przejść do innych języków. Skorzystam z niej
+  cząstkowo - poprzez przypomnienie sobie Pythona, zrobienie małego projektu i jego rozwinięcie z wykorzystaniem
+  C/C++ poprzez komunikację API.<br><br>
+
+
+
+
 
   <footer class="footer">
-    <p>Licensed under GNU. Copyright © 2024 Krzysztof Subartowicz (Cisco).</p>
+    <p>Licensed under GNU. Copyright © 2024 Cisco.</p>
   </footer>
 </div>
 </body>
