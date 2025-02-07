@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,59 @@
 
   <h1>personal blog - my journey with Low-Level Languages</h1>
 <br><br>
-<h2>20.12.2024 11AM</h2>
+
+  <h2>07.02.2025 1 PM</h2>
+  Poszedłem trochę do przodu. Wdrożyłem aplikację na serwer VPS. <br>
+  Przygotowałem plik JAR, skonfigurowałem NGINX i poszło.<br>
+  Aplikacja nie ma jeszcze frontu. Będzie dostępny pod adresem <b>insurance.llpl.org</b>.<br>
+  Póki co aplikacja działa,
+  ale można tylko korzystać z API.<br>
+  Jeszcze nie jest zabezpieczona hasłem - nie ma przed kim i nie ma czego.<br>
+  Poza tym, dwa endpointy, które mam, nie są jeszcze skończone. <br>
+  Mam co prawda zabezpieczenie w calculate przed pustym peselem i danymi osobowymi, ale nie ma weryfikacji poprawności
+  i obliczania wieku na podstawie numeru PESEL. To jest najbliższy cel<br>
+  Dla chętnych:<br><br>
+  <b>Endpoint do kalkulacji:</b><br><br>
+  <b></b>185.238.73.228:8080/api/insurance/calculate<br></b>
+  Body:<br>
+  {<br>
+  "pesel": "1288668981",<br>
+  "firstName": "Adam",<br>
+  "lastName": "Nowak",<br>
+  "location": "Warszawa",<br>
+  "value": 3050,<br>
+  "rooms": 2<br>
+  }<br><br>
+  <b>Endpoint do zmiany danych klienta:</b><br><br>
+  <b>http://localhost:8080/api/insurance/update-client<br></b>
+  Body:<br>
+  {<br>
+  "pesel": "1288668981",<br>
+  "newFirstName": "Adam",<br>
+  "newLastName": "Nowak"<br>
+  }<br><br>
+  Zapomniałbym, jestem w trakcie przygotowywania <b>Kibany</b> na produkcji.<br>
+  Mam już zainstalowane i wstępnie skonfigurowane wszystko,
+  ale zostały ostatnie poprawki. No i chyba muszę dołożyć RAM na serwer, bo już jest na 80%...
+  <br><br>
+  -------------------------------------------------------<br>
+  -------------------------------------------------------<br>
+
+  <h2>04.02.2025 1 PM</h2>
+  rochę mnie nie było. Miałm niestety duże turbulencję życiowe, które wycięły mi wenę do pisania i tworzenia.
+  Oraz nauki... Co się zmieniło - człowiek jest istotą zmienną, więc zmieniłem swoje podejście. Najpierw chcę się
+  nauczyć Javy - która zapewni mi większe możliwości i zrozumienie tego co się dzieje u mnie w pracy. Jak to ogarnę,
+  to przechodzę do nauki podstaw działania sieci oraz do języka C/C++. Jeszcze nie zdecydowałem, który będzie pierwszy.
+  Póki co, moją małą aplikację w Pythonie zamieniłem na aplikację w Javie. Możecie ją sobie podejrzeć na moim githubie.
+  Jest jeszcze bardzo niedoskonała - to dopiero zręby aplikacji. Póki co nie ma jeszcze weryfikacji numeru PESEL,
+  słowników imion itp. Plus bardzo niedoskonałą jest metoda obliczania ceny. Ale od czegoś trzeba zacząć. Jak mam
+  początek, to potem będzie już łatwiej. Póki co, ponieważ pewnie i tak nikt tego nie czyta, sam sobię życzę powodzenia.
+  Pewnie odezwę się bliżej niż dalej.<br><br>
+
+
+  -------------------------------------------------------<br>
+  -------------------------------------------------------<br>
+  <h2>20.12.2024 11AM</h2>
   Zrobiłem drobne poprawki na stronach www.llpl.org oraz portubezpieczen.pl<br>
   Aplikacja insurance_llpl jest dostepna poprzez API: http://57.129.16.48/calculate_price<br>
   Frontu na obecną chwilę nie zamierzam robić.<br>
