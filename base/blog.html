@@ -38,9 +38,10 @@
  Udało się - dodałem logowanie Kibana, Elasticsearch :-) <br>
   To, że działa, można zobaczyć wchodząc na:<br><br>
   <b>http://185.238.73.228:5601</b><br>
-  Ze względów bezpieczeństwa, hasła nie podam.<br><br>
-  PLUS: poprawiłem kod JS - wcześniej trzeba było każdorazowo zmieniać kolor na czarny po odwiedzeniu każdej strony. <br>
-  Teraz zapisuje się to w local storage i po jednokrotnym wybraniu, każda strona będzie się już otwierałą z czarnym motywem. <br>
+  Ze względów bezpieczeństwa, hasła nie podam.<br>
+  UWAGA, ze względu na 4 GB RAM na VPS, Kibana, PostgreSQL, strona www, system operacyjny i aplikacja nie dają rady. <br>
+  Aplikacja uruchomi się za 2-3 dni, wtedy wskoczę na 16GB RAM i wszystko powinno działać :-) <br>
+
 
   <br><br>
 
@@ -215,6 +216,9 @@
     <p>Licensed under GNU. Copyright © 2024 Krzysztof.</p>
   </footer>
 </div>
-<script src="../js/script.js"></script></body>
+<script src="/js/cookieUtils.js"></script>
+<script src="/js/cookiePopup.js"></script>
+<script src="/js/script.js"></script>
+
 </body>
 </html>

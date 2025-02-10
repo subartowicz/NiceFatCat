@@ -1,18 +1,21 @@
-// Funkcja do zapisania preferencji motywu w localStorage
+// script.js
+
 function saveThemePreference(theme) {
-  localStorage.setItem('selectedTheme', theme); // Zapisujemy motyw ('dark' lub 'light')
+  console.log('Zapisuję ciasteczko z motywem:', theme); // Debug
+  setCookie('selectedTheme', theme, 365, "/", "Lax", true); // Zabezpieczenie przez HTTPS
 }
 
-// Funkcja do załadowania motywu na podstawie zapisanej preferencji w localStorage
 function loadThemePreference() {
-  const savedTheme = localStorage.getItem('selectedTheme'); // Pobieramy zapisany motyw
+  const savedTheme = getCookie('selectedTheme'); // Pobierz motyw z ciasteczka
+  console.log('Załadowany motyw z ciasteczka:', savedTheme); // Debug
+
   const body = document.body;
   const sidebar = document.querySelector('.sidebar');
   const content = document.querySelector('.content');
   const themeToggle = document.getElementById('themeToggle');
 
   if (savedTheme === 'dark') {
-    // Ustawienia ciemnego motywu
+    // Ustaw ciemny motyw
     body.style.backgroundColor = 'black';
     body.style.color = 'white';
     sidebar.style.backgroundColor = '#222';
@@ -20,7 +23,7 @@ function loadThemePreference() {
     content.style.color = 'white';
     themeToggle.textContent = 'Przywróć jasny motyw';
   } else {
-    // Domyślne ustawienia jasnego motywu
+    // Ustaw jasny motyw (domyślny)
     body.style.backgroundColor = '#f7f7f7';
     body.style.color = 'black';
     sidebar.style.backgroundColor = '#002233';
@@ -30,43 +33,19 @@ function loadThemePreference() {
   }
 }
 
-// Funkcja do zmiany motywu i zapisania nowej preferencji (po kliknięciu przycisku)
-function toggleTheme() {
-  const body = document.body;
-  const sidebar = document.querySelector('.sidebar');
-  const content = document.querySelector('.content');
-  const themeToggle = document.getElementById('themeToggle');
-
-  if (body.style.backgroundColor === 'black') {
-    // Zmiana na jasny motyw
-    body.style.backgroundColor = '#f7f7f7';
-    body.style.color = 'black';
-    sidebar.style.backgroundColor = '#002233';
-    sidebar.style.color = 'white';
-    content.style.color = '#333';
-    themeToggle.textContent = 'Zmień motyw';
-
-    // Zapisujemy preferencję jasnego motywu
-    saveThemePreference('light');
-  } else {
-    // Zmiana na ciemny motyw
-    body.style.backgroundColor = 'black';
-    body.style.color = 'white';
-    sidebar.style.backgroundColor = '#222';
-    sidebar.style.color = 'white';
-    content.style.color = 'white';
-    themeToggle.textContent = 'Przywróć jasny motyw';
-
-    // Zapisujemy preferencję ciemnego motywu
-    saveThemePreference('dark');
-  }
-}
-
-// Po załadowaniu strony wczytaj preferencje z localStorage
 document.addEventListener('DOMContentLoaded', function () {
-  loadThemePreference(); // Załaduj zapisany motyw
+  loadThemePreference(); // Załaduj motyw z ciasteczka
 
-  // Ustaw event listener dla przycisku zmiany motywu
   const themeToggle = document.getElementById('themeToggle');
-  themeToggle.addEventListener('click', toggleTheme);
+  themeToggle.addEventListener('click', function () {
+    const body = document.body;
+
+    if (body.style.backgroundColor === 'black') {
+      saveThemePreference('light'); // Zapisz "light" w ciasteczku
+      loadThemePreference(); // Ponownie załaduj motyw
+    } else {
+      saveThemePreference('dark'); // Zapisz "dark" w ciasteczku
+      loadThemePreference(); // Ponownie załaduj motyw
+    }
+  });
 });
