@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K524SQJK');</script>
-  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blog</title>
@@ -15,10 +9,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K524SQJK"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <button id="themeToggle" class="theme-toggle-button">Zmień motyw</button>
 <div class="sidebar">
   <!-- Twoja istniejąca treść -->
@@ -27,7 +18,7 @@
 <div class="sidebar">
   <div class="top-section">
     <h1><a href="../index.html">LLPL</a> </h1>
-    <p>homepage of <br> Krzysztof</p><br>
+    <p>homepage of <br> Cisco</p><br>
     e-mail: k(at)llpl.org
   </div>
   <div class="bottom-section">
@@ -42,223 +33,10 @@
 </div>
 <div class="content">
 
-  <h1>personal blog - my journey with Low-Level Languages</h1>
-<br><br>
-  <h2>17.02.2025 15.00</h2>
-  Z powodu pewnych obowiązków osobistych, nie mogłem ostatnio skupić się na pracy tak bardzo, jak bym tego chciał. <br>
-  Jednak nie próżnowałem w wolnych chwilach, zacząłem przygotowywać nową wersję BE dla insurance.llpl.org.pl. <br>
-  Dlaczego nowa? Nie podobał mi się sposób napisania i mechanizmy w aplikacji.
-  Obecnie przygotowałem nową wersję klas, zajmuję się stworzeniem klas podstawowych dla klienta, property,
-  kalkulacji, oferty i polisy. <br>
-
-  Dodatkowo, będzie działała metoda pobrania danych o kliencie, update pełnych danych. <br>
-  Właśnie tak ma to działać - klasa podstawowa, klasa pochodna i niżej.
-  Silnik liczący został zmodyfikowany pod kątem wprowadzania w nim zmian. <br>
-  Obecnie działa jako jeden plik z referencjami, ale docelowo zależności zostaną przekazane do baz danych, gdzie będzie
-  uzupełniało się dane niezbędne do prostej kalkulacji. Właśnie na tym się skupiam - nie tylko, żeby liczyło, ale także,
-  żeby można było na spokojnie rozwijać ten program. <br>
-  Stworzona do tego zostanie także pełna dokumentacja. Zarówno Swagger, jak i dokumentacja techniczno-analityczna.<br>
-  Jeszcze zastanawiam się nad narzędziem i miejscem umieszczenia dokumentacji.<br><br>
-  Czemu tyle czasu w Javie, a nie LLPL? Cóż, aplikacja ma służyć mi do pewnych celów związanych z LLPL oraz security.
-  To jest rzeczywisty cel jej powstania - obok oczywiście nauki programowania w Javie...
-  Jednak na razie nie zdradzam szczegółów. <br>
-  __code new version INSURANCE APP <a href="https://github.com/gitlearncpp/insuranceLLPL">here</a>
-  <br><br>
-  <b>Off the record</b><br>
-  Postanowiłem nie przedłużać istnienia strony PortUbezpieczeń.<br>
-  Strona w środowisku, wśród pracowników Towarzystw Ubezpieczeniowych i tym bardziej szkoleniowców została przyjęta z
-  uznaniem. Jednak agenci nie byli zbytnio chętni do poszerzania wiedzy.<br>
-  Zebrane tam materiały były sumą moich doświadczeń z całego okresu pracy w ubezpieczeniach.<br>
-  Koszt takiej wiedzy (szkoleń) jak na portalu (za darmo) wynosiłby kilkanaście tysięcy złotych. <br>
-  Ale jak widać, co za darmo to nie ma wartości...<br>
-  Będę mógł w pełni skupić się na obecnym projekcie i samokształceniu (niestety jestem typem, który cały czas musi
-  uczyć się nowych rzeczy i cały czas czuje taki przymus wewnętrzny). <br>
-
-  <br><br>
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-
-  <h2>10.02.2025 10.00</h2>
- Udało się - dodałem logowanie Kibana, Elasticsearch :-) <br>
-  To, że działa, można zobaczyć wchodząc na:<br><br>
-  <b>http://185.238.73.228:5601</b><br>
-  Ze względów bezpieczeństwa, hasła nie podam.<br>
-  UWAGA, ze względu na 4 GB RAM na VPS, Kibana, PostgreSQL, strona www, system operacyjny i aplikacja nie dają rady. <br>
-  Aplikacja uruchomi się za 2-3 dni, wtedy wskoczę na 16GB RAM i wszystko powinno działać :-) <br>
-
-
-  <br><br>
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-
-
-
-  <h2>09.02.2025 17.00/h2>
-  Mała zmiana na stronie - można teraz na każdej stronie zmienić motyw na czarny. Dodane
-  za pomocą JS, CSS i HTML. <br>
-
-<br><br>
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-
-  <h2>07.02.2025 13.00</h2>
-  Poszedłem trochę do przodu. Wdrożyłem aplikację na serwer VPS. <br>
-  Przygotowałem plik JAR, skonfigurowałem NGINX i poszło.<br>
-  Aplikacja nie ma jeszcze frontu. Będzie dostępny pod adresem <b>insurance.llpl.org</b>.<br>
-  Póki co aplikacja działa,
-  ale można tylko korzystać z API.<br>
-  Jeszcze nie jest zabezpieczona hasłem - nie ma przed kim i nie ma czego.<br>
-  Poza tym, dwa endpointy, które mam, nie są jeszcze skończone. <br>
-  Mam co prawda zabezpieczenie w calculate przed pustym peselem i danymi osobowymi, ale nie ma weryfikacji poprawności
-  i obliczania wieku na podstawie numeru PESEL. To jest najbliższy cel<br>
-  Dla chętnych:<br><br>
-  <b>Endpoint do kalkulacji:</b><br><br>
-  <b></b>185.238.73.228:8080/api/insurance/calculate<br></b>
-  Body:<br>
-  {<br>
-  "pesel": "1288668981",<br>
-  "firstName": "Adam",<br>
-  "lastName": "Nowak",<br>
-  "location": "Warszawa",<br>
-  "value": 3050,<br>
-  "rooms": 2<br>
-  }<br><br>
-  <b>Endpoint do zmiany danych klienta:</b><br><br>
-  <b>http://localhost:8080/api/insurance/update-client<br></b>
-  Body:<br>
-  {<br>
-  "pesel": "1288668981",<br>
-  "newFirstName": "Adam",<br>
-  "newLastName": "Nowak"<br>
-  }<br><br>
-  Zapomniałbym, jestem w trakcie przygotowywania <b>Kibany</b> na produkcji.<br>
-  Mam już zainstalowane i wstępnie skonfigurowane wszystko,
-  ale zostały ostatnie poprawki. No i chyba muszę dołożyć RAM na serwer, bo już jest na 80%...
-  <br><br>
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-
-  <h2>04.02.2025 13.00</h2>
-  Trochę mnie nie było. Miałm niestety duże turbulencję życiowe, które wycięły mi wenę do pisania i tworzenia.
-  Oraz nauki... Co się zmieniło - człowiek jest istotą zmienną, więc zmieniłem swoje podejście. Najpierw chcę się
-  nauczyć Javy - która zapewni mi większe możliwości i zrozumienie tego co się dzieje u mnie w pracy. Jak to ogarnę,
-  to przechodzę do nauki podstaw działania sieci oraz do języka C/C++. Jeszcze nie zdecydowałem, który będzie pierwszy.
-  Póki co, moją małą aplikację w Pythonie zamieniłem na aplikację w Javie. Możecie ją sobie podejrzeć na moim githubie.
-  Jest jeszcze bardzo niedoskonała - to dopiero zręby aplikacji. Póki co nie ma jeszcze weryfikacji numeru PESEL,
-  słowników imion itp. Plus bardzo niedoskonałą jest metoda obliczania ceny. Ale od czegoś trzeba zacząć. Jak mam
-  początek, to potem będzie już łatwiej. Póki co, ponieważ pewnie i tak nikt tego nie czyta, sam sobię życzę powodzenia.
-  Pewnie odezwę się bliżej niż dalej.<br><br>
-
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-  <h2>20.12.2024 11.00</h2>
-  Zrobiłem drobne poprawki na stronach www.llpl.org oraz portubezpieczen.pl<br>
-  Aplikacja insurance_llpl jest dostepna poprzez API: http://57.129.16.48/calculate_price<br>
-  Frontu na obecną chwilę nie zamierzam robić.<br>
-  Obecnie mozna poprzez Postmana sprawdzić działanie aplikacji. RQ znajdzicie w poście z 28.11.2024, tu się nic nie zmieniło. <br>
-  Dodany został kolejny element do RS - druga wersja oferty ceny ubezpieczenia (np. w przypadku różnych wariantów. <br>
-  Wdrożyłem także zabezpieczenie hasłem, tak na wszelki wypadek, chociaż podaje je publicznie poniżej ;) <br>
-  L: admin
-  P: securepassword<br><br>
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-  <h2>17.12.2024, godz. 14:30</h2>
-  Niestety pochorowałem się, byłem wycięty z życia przez 3 tygodnie.<br>
-  Zero możliwości zbytniego wysiłku intelektualnego. Serdecznie nie polecam...<br><br>
-  Nie próżnowałem jednak tak bardzo, przeczytałem w tym czasie:<br><br>
-  _"Król darknetu" N. Biltona - bardzo dobra i wciągająca książka.
-  Polecam każdemu zainteresowanemu krypto, libertarianizmem i wolnością internetu.<br>
-  _No i perełka: "Czarne dziury. klucz do zrozumienia wszechświata". Pozycja obowiązkowa!!!<br>
-  _Obecnie czytam opasły tom: "Oppenheimer. Triumf i tragedia ojca bomby atomowej".
-  Zostało mi ok. 150 stron z 700. Bardzo interesująca lektura dla zainteresowanych nauką
-  i biografią tego niezwykłego człowieka.<br>
-
-  _Plus: obejrzałem 3 filmy Deadpoola. Dobra rozrywka na luźne wieczory. Nie wymaga zaangażowania
-  i dobrze się można przy tym rozerwać.<br><br>
-  Liczę, że ten tydzień przyniesie mi bardziej obfite rezultaty pracy.<br><br>
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-
-
-  <h2>06.12.2024, godz. 22:00</h2>
-
-  Poprawiłem poniższy kod oraz przygotowałem zmiany na FE. Stworzyłem za pomocą Pythona oraz Flaska i JS
-  połączenie pomiędzy FE i BE. Teraz można wdrożyć projekt na serwerze. ten etap pomijam.
-  Jeżeli ktoś jest zainteresowany - w co mogę wątpić, może pobrać obecną wesję 0.1 z GH.<br>
-  Teraz można:<br>
-  przekazać dane poprzez FE, nie tylko Postmana; <br>
-  otrzymać cenę ubezpieczenia w dwóch wariantach;
-  ewentualnie dodawać kolejne zależności.<br>
-  To krótki projekt tytułem wstępu. <br><br>
-
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-  <h2>28.11.2024, godz. 13:00</h2>
-  Co zrobiłem: Przypomniałem sobie podstawy Pythona i pisania w tym języku.
-  Przejrzałem zasady programowania obiektowego. Dodatkowo, <b>przygotowałem aplikację</b> insurance.llpl.org.pl, która ma na celu obliczanie ceny ubezpieczenia domu na podstawie zmiennych związanych z nieruchomością.<br>
-  Aplikacja została opracowana przy użyciu <b>programowania obiektowego, frameworka Flask i PostgreSQL</b>. <br>
-  Aplikacja jest dostępna na moim GitHubie: <a href="https://github.com/gitlearncpp/insurance.llpl">link</a> .<br>Dodatkowo, aplikacja <b>została wdrożona</b> do środowiska produkcyjnego. Serwer <b>Fedora</b>, przy użyciu <b>Nginx i Gunicorn</b>.<br>
-  Miałem trochę problemów z konfiguracją podczas wdrażania, ale udało się to rozwiązać.
-  Nie stworzyłem frontendu aplikacji; jest ona dostępna przez API.<br><br>
-
-  <b>przykład:</b><br><br>
-  <b>Endpoint</b>: http://57.129.16.48/calculate_price <br>
-  <b>request</b>: <br>{
-  "house": {
-  "price": 536000,
-  "bedrooms": 1,
-  "bathrooms": 2,
-  "square_feet": 30,
-  "lot_size": 2000,
-  "year_built": 1891,
-  "city": "Warszawa",
-  "state": "Mazowieckie",
-  "address": "Ul. Niepodległości",
-  "number": "2",
-  "things_inside": 30000,
-  "house_type": "apartment"
-  },
-  "person": {
-  "first_name": "Jan",
-  "last_name": "Nowak",
-  "pesel": "75351115553",
-  "street": "Ul. Poboczna",
-  "city": "Gdynia",
-  "number": "16",
-  "postal_code": "81-578",
-  "phone": "555666<br><br>
-
-  -------------------------------------------------------<br>
-  -------------------------------------------------------<br>
-
-  <h2>19.11.2024, godz. 22:00</h2>
-
-  <b>prolog - pierwszy post</b><br>
-  Celem, który sobie wyznaczyłem, jest nauka programowania w językach niskiego poziomu. <br>
-  Od pewnego czasu uczę się języków takich jak Python i Java, ale zrozumiałem, że najbardziej intrygujące
-  i ekscytujące są języki niskiego poziomu.<br>
-  Na tym blogu chcę dzielić się swoimi doświadczeniami, wzlotami i upadkami (których niewątpliwie będzie wiele).
-  Przeglądając fora i Reddit, natknąłem się na różne strategie.
-
-  <h3>strategia pierwsza</h3> Zacząć od C++, po drodze nauczyć się C, a następnie sprawdzać różnice między C i C++.
-
-  <h3>strategia druga, mój wybór</h3> Najpierw nauczyć się C, potem C++, a na końcu Assemblera.
-  <h3>strategia trzecia</h3> Najpierw dobrze opanować Pythona, a potem przejść do innych języków. Skorzystam z niej
-  cząstkowo - poprzez przypomnienie sobie Pythona, zrobienie małego projektu i jego rozwinięcie z wykorzystaniem
-  C/C++ poprzez komunikację API.<br><br>
-
-
-
 
 
   <footer class="footer">
-    <p>Licensed under GNU. Copyright © 2025 Krzysztof.</p>
+    <p>Licensed under GNU. Copyright © 2025 Cisco.</p>
   </footer>
 </div>
 <script src="/js/cookieUtils.js"></script>
