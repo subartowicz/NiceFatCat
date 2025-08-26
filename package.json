@@ -1,13 +1,13 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
+  "name": "NiceFatCat",
+  "version": "0.1.1",
+  "description": "Personal site about GNC, Black Hols, Astrophysics and Primary Numbers. Also C++ and C language",
   "private": true,
   "keywords": [
-    ""
+    "C++", "C programming language", "Black Holes", "Primary numbers", "GNC", "Astrophysics"
   ],
   "license": "",
-  "author": "",
+  "author": "Krzysztof Subartowicz",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",
