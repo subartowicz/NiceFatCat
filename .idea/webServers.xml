@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c03bfa15-5d42-42b4-8a1d-bcb2e9480193" name="PRD">
+        <fileTransfer rootFolder="/var/www/nicefatcat.com/public" accessType="SFTP" host="185.238.74.184" port="22" sshConfigId="6a40e760-504c-4420-9c07-e6fa0984a3c5" sshConfig="root@185.238.74.184:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseSudo="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
